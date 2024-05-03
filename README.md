@@ -35,3 +35,27 @@ void display()
  printf(" %d -> ",s->data);
  }
 } 
+
+#include <stdio.h>
+#include "doublylist.h"
+int main()
+{ int ch;
+ do
+ {
+ printf("\n1.create\n2.display\n0.exit");
+ printf("enter choice :");
+ scanf("%d",&ch);
+ switch (ch)
+ {
+ case 1: create();
+ break;
+ case 2: display();
+ break;
+ case 0: break;
+ default:
+ default:printf("invalid choice ");
+ break;
+ }
+ }while(ch!=0);
+} 
+
